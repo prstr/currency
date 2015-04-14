@@ -1,6 +1,6 @@
 {
   "name": "prostore.currency",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Dead-simple currency formatter",
   "main": "src/index.js",
   "devDependencies": {
