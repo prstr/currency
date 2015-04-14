@@ -1,0 +1,26 @@
+{
+  "name": "currency",
+  "version": "0.0.0",
+  "description": "Dead-simple currency formatter",
+  "main": "src/index.js",
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prstr/currency.git"
+  },
+  "keywords": [
+    "prostore",
+    "utils"
+  ],
+  "author": "Boris Okunskiy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prstr/currency/issues"
+  },
+  "homepage": "https://github.com/prstr/currency"
+}
