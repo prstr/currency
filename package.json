@@ -4,11 +4,15 @@
   "description": "Dead-simple currency formatter",
   "main": "src/index.js",
   "devDependencies": {
-    "mocha": "*"
+    "mocha": "*",
+    "eslint": "*",
+    "pre-commit": "*"
   },
   "scripts": {
+    "pretest": "eslint .",
     "test": "mocha -R spec"
   },
+  "pre-commit": [ "test" ],
   "repository": {
     "type": "git",
     "url": "https://github.com/prstr/currency.git"

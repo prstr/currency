@@ -1,18 +1,18 @@
-"use strict";
+'use strict';
 
 var currency = require('../src/index')
   , assert = require('assert');
 
-describe('Currency formatter', function() {
+describe('Currency formatter', function () {
 
-  it('should format simple numbers', function() {
+  it('should format simple numbers', function () {
     assert.equal(currency(100, {
       currencySymbol: '$',
       currencyFormat: '%s%v'
     }).val, '$100');
   });
 
-  it('should format insert decimal places', function() {
+  it('should format insert decimal places', function () {
     assert.equal(currency(100.123, {
       currencySymbol: '$',
       currencyFormat: '%s%v',
@@ -20,7 +20,7 @@ describe('Currency formatter', function() {
     }).val, '$100.12');
   });
 
-  it('should format accept decimal and thousands separator', function() {
+  it('should format accept decimal and thousands separator', function () {
     assert.equal(currency(15000.447, {
       currencySymbol: 'руб.',
       currencyDecimalSeparator: ',',
@@ -29,7 +29,7 @@ describe('Currency formatter', function() {
     }).val, '15 000,45 руб.');
   });
 
-  it('should accept negative numbers', function() {
+  it('should accept negative numbers', function () {
     assert.equal(currency(-1000.447, {
       currencySymbol: 'руб.',
       currencyDecimalSeparator: ',',

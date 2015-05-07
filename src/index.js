@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /**
  * Formats monetary `value` using provided options.
@@ -11,7 +11,7 @@
  *   * `currencyFormat` (default '%v %s') — template string where `%s` stands
  *     for currency symbol and `%v` stands for formatted numeric value
  */
-module.exports = exports = function(value, options) {
+module.exports = exports = function (value, options) {
   options = options || {};
   var decimalPlaces = options.currencyDecimalPlaces || 0
     , groupingSeparator = options.currencyGroupingSeparator || ''
@@ -48,5 +48,5 @@ module.exports = exports = function(value, options) {
     num: result,
     pnum: padded,
     dec: decimalPart
-  }
+  };
 };
