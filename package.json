@@ -1,6 +1,6 @@
 {
   "name": "prostore.currency",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Dead-simple currency formatter",
   "main": "src/index.js",
   "devDependencies": {
@@ -12,7 +12,9 @@
     "pretest": "eslint .",
     "test": "mocha -R spec"
   },
-  "pre-commit": [ "test" ],
+  "pre-commit": [
+    "test"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/prstr/currency.git"
